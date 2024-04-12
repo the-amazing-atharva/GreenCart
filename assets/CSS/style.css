@@ -1,0 +1,262 @@
+:root {
+  --primary: #8ac926;
+  --secondary: #ffee32;
+  --light: #f7f8fc;
+  --dark: #111111;
+}
+
+/* @import url("https://fonts.googleapis.com/css2?family=Spline+Sans:wght@400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Pacifico&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Pacifico&family=Roboto+Slab:wght@100..900&display=swap"); */
+@import url("https://fonts.googleapis.com/css2?family=Mochiy+Pop+P+One&family=Oswald:wght@200..700&family=Pacifico&family=Roboto+Slab:wght@100..900&display=swap");
+
+body {
+  font-family: "Spline Sans", sans-serif;
+  color: #777;
+  line-height: 1.7;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 600;
+  color: #222;
+}
+
+.logo-gr {
+  color: #8ac926;
+}
+
+.logo-yel {
+  color: #ffee32;
+}
+
+a {
+  color: #222;
+  text-decoration: none;
+  transition: all 0.4s;
+}
+
+a:hover {
+  color: var(--primary);
+}
+
+img {
+  width: 100%;
+}
+
+section,
+.milestone {
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
+
+.shadow-on-hover {
+  transition: all 0.3s;
+}
+
+.shadow-on-hover:hover {
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
+}
+
+/* Btn */
+.btn {
+  border-radius: 0;
+  /* padding: 14px 38px; */
+  padding: 12px 20px;
+}
+
+.btn-brand {
+  color: #fff;
+  font-weight: 500;
+  border-color: #6ea11e;
+  background-color: #8ac926;
+}
+
+.btn-brand:hover {
+  border-color: #000;
+  background-color: #6ea11e;
+  color: #fff;
+}
+
+.bg-cover {
+  background-position: center !important;
+  background-size: cover !important;
+  background-repeat: no-repeat !important;
+}
+
+/* Slider */
+#heroslider {
+  margin-bottom: 120px;
+}
+
+.slide-1 {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url(../images/cover1.jpg);
+}
+
+.slide-2 {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url(../images/cover2.jpg);
+}
+
+.slide-3 {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url(../images/cover3.jpg);
+}
+
+#heroSlider h6::after,
+#heroSlider h6::before {
+  content: " ";
+  width: 40px;
+  height: 4px;
+  background-color: #ffffff;
+  display: inline-block;
+  margin: 10px;
+  vertical-align: middle;
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+  background-color: rgba(0, 0, 0, 0.6);
+  width: 40px;
+  height: 70px;
+  margin: auto;
+}
+
+#stats h6 {
+  /* color: #f50e5d; */
+  color: #8ac926;
+}
+
+.circle-icon {
+  width: 55px;
+  height: 55px;
+  border-radius: 50%;
+  background-color: #8ac926;
+}
+
+/* INFO */
+#info {
+  position: relative;
+  margin-top: 120px;
+  margin-bottom: 120px;
+}
+
+#info::before {
+  content: "";
+  width: 30%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: #8ac926;
+  z-index: -1;
+}
+
+#info h6 {
+  /* color: #f50e5d; */
+  color: #8ac926;
+}
+
+@media (max-width: 992px) {
+  #info::before {
+    height: 40%;
+    width: 100%;
+  }
+}
+
+/* MILESTONE */
+#milestone {
+  background: linear-gradient(rgba(0, 166, 251, 0.85), rgba(0, 166, 251, 0.85)),
+    url(../images/15872.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+#milestone h1,
+#milestone p {
+  color: #fff;
+}
+
+/* SERVICES SECTION */
+#services h6 {
+  color: #8ac926;
+}
+
+.service {
+  padding: 32px;
+  background-color: #fff;
+  box-shadow: 0px 6px 30px rgba(0, 0, 0, 0.08);
+}
+.service:hover {
+  transition: all 0.4s;
+  transform: scale(1.03);
+}
+
+.service h5 {
+  margin-top: 24px;
+  margin-bottom: 14px;
+}
+
+.service img {
+  width: 90px;
+}
+
+.bg-secondary {
+  color: #fff;
+  background-color: #8ac926;
+}
+
+/* CTA SECTION */
+#cta {
+  /* background-color: #e93b81; */
+  background-color: #8ac926;
+}
+
+.cta-btn:hover {
+  color: #fff;
+  background-color: transparent;
+  font-weight: 450;
+}
+
+/* FOOTER SECTION */
+.logo-text {
+  font-family: "Mochiy Pop P One";
+  /* margin-bottom: 10px; */
+}
+.footer-top {
+  padding-top: 80px;
+  padding-bottom: 30px;
+}
+
+.footer-bottom {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  border-top: 1px solid rgba(0, 0, 0, 0.15);
+}
+
+footer .footer-links a,
+footer .social-icons a {
+  color: #898fa1;
+}
+
+footer .social-icons a {
+  font-size: 24px;
+}
+
+footer .footer-links a {
+  display: block;
+  font-weight: 400;
+}
+
+footer .social-icons a:hover,
+footer .footer-links a:hover {
+  /* color: #e93b81; */
+  color: #8ac926;
+}
